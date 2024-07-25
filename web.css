@@ -49,3 +49,43 @@ footer {
     text-align: left; /* Agar daftar berada di rata kiri */
 }
 
+.about-bubble, .interests-bubble {
+    background-color: #fff; /* Remove background color if you want it to be plain text */
+    color: #000; /* Set text color */
+    padding: 15px; /* Adjust padding as needed */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove margin if not needed */
+}
+
+.about-section p, .about-section h3 {
+    text-align: left; /* Ensure text is aligned left */
+}
+
+.skills-section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.skills-section li {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    width: calc(50% - 20px); /* Adjust width to fit in row */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section li:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #d2b48c transparent transparent transparent;
+}
