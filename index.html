@@ -41,9 +41,30 @@
             bottom: 0;
             width: 100%;
         }
-        .portfolio img {
-            max-width: 100%;
+        .portfolio img, .contact-info img {
+            max-width: 100%; /* Menyesuaikan gambar dengan lebar kontainer */
+            height: auto; /* Menjaga proporsi gambar */
+        }
+        .contact-info a {
+            color: #d2b48c;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        /* Tambahkan aturan CSS untuk gambar di section certificate */
+        #certificate img {
+            max-width: 80%; /* Atur lebar maksimal gambar dalam section certificate */
             height: auto;
+            display: block; /* Agar margin auto berfungsi dengan baik */
+            margin: 0 auto; /* Menyelaraskan gambar di tengah kontainer */
+        }
+        /* Tambahkan aturan CSS untuk gambar di section about */
+        #about img {
+            max-width: 50%; /* Atur lebar maksimal gambar dalam section about */
+            height: auto;
+            display: block; /* Agar margin auto berfungsi dengan baik */
+            margin: 0 auto; /* Menyelaraskan gambar di tengah kontainer */
         }
     </style>
 </head>
@@ -76,18 +97,18 @@
         </div>
     </section>
 
-   <section id="contact" class="my-5">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact</h2>
-                    <p>If you have any questions or feedback, feel free to reach out to us:</p>
-                    <ul>
-                        <li>Instagram: <a href="https://instagram.com/erianarwnii">contact me</a></li>
-                        <li>E-mail: <a href="erianariwani72@gmail.com">contact me</a></li>
-                    </ul>
-                </div>
+    <section id="contact" class="my-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Contact</h2>
+                <p>If you have any questions or feedback, feel free to reach out to us:</p>
+                <ul class="contact-info">
+                    <li>Instagram: <a href="https://instagram.com/erianarwnii">contact me</a></li>
+                    <li>E-mail: <a href="mailto:erianariwani72@gmail.com">contact me</a></li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
     <footer>
         <p>Eriana Salwa &copy; 2024 My Portfolio</p>
