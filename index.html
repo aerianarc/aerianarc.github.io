@@ -102,12 +102,10 @@
             min-width: 250px;
             margin: 10px;
             text-align: center;
-        }
-        .about-details img {
-            border-radius: 50%;
-            max-width: 150px;
-            margin: 0 auto;
-            display: block;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         .skills-section {
             background-color: #fff;
@@ -117,8 +115,12 @@
         .skills-section h2 {
             color: #d2b48c;
         }
-        .skills-section p {
-            text-align: left; /* Agar teks di bagian Skills rata kiri */
+        .skills-section p, .skills-section ul {
+            text-align: left;
+        }
+        .skills-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -135,33 +137,33 @@
     </header>
 
     <section id="about" class="about-section">
-    <h2>About Me</h2>
-    <div class="about-details">
-        <div>
-            <img src="https://github.com/aerianarc/aerianarc.github.io/raw/38e0410f32514314cf51e796b9afba613dffc146/6129610852375051375.jpg" alt="Profile Picture of Eriana Salwa">
-            <p>Hello! Nama saya Eriana Salwa. Saya siswi SMK Taruna Bhakti Depok, kelas 12 TJKT 1.</p>
-        </div>
-        <div>
-            <h3>My Interests</h3>
-            <p>I studied Computer Network and Telecommunications Engineering at Taruna Bhakti Vocational School, Depok. I have a deep interest in the fields of computer networks and telecommunications, and enjoy learning new things related to information technology. I continue to hone my skills in network management, and server configuration.</p>
-        </div>
-        <div>
-            <h3>Skills</h3>
-            <div class="skills-section">
-                <p>I have deep skills in:</p>
-                <ul>
-                    <li>Network management</li>
-                    <li>Server configuration</li>
-                    <li>Hosting solutions</li>
-                    <li>Network security</li>
-                    <li>Virtualization and cloud computing</li>
-                    <li>Basic programming (Python, HTML, CSS)</li>
-                </ul>
+        <h2>About Me</h2>
+        <div class="about-details">
+            <div>
+                <img src="https://github.com/aerianarc/aerianarc.github.io/raw/38e0410f32514314cf51e796b9afba613dffc146/6129610852375051375.jpg" alt="Profile Picture of Eriana Salwa">
+                <p>Hello! Nama saya Eriana Salwa. Saya siswi SMK Taruna Bhakti Depok, kelas 12 TJKT 1.</p>
+            </div>
+            <div>
+                <h3>My Interests</h3>
+                <p>I studied Computer Network and Telecommunications Engineering at Taruna Bhakti Vocational School, Depok. I have a deep interest in the fields of computer networks and telecommunications, and enjoy learning new things related to information technology. I continue to hone my skills in network management, and server configuration.</p>
+            </div>
+            <div>
+                <h3>Skills</h3>
+                <div class="skills-section">
+                    <p>I have deep skills:
+                        <ul>
+                            <li>Network management</li>
+                            <li>Server configuration</li>
+                            <li>Hosting solutions</li>
+                            <li>Network security</li>
+                            <li>Virtualization and cloud computing</li>
+                            <li>Basic programming (Python, HTML, CSS)</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <section id="certificate">
         <h2>Certificate</h2>
