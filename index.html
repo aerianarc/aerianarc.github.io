@@ -5,7 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eriana Salwa Riwani</title>
     <style>
-        /* Include the updated CSS here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #d2b48c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #d2b48c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .portfolio img, .contact-info img {
+            max-width: 100%;
+            height: auto;
+        }
+        .contact-info a {
+            color: #d2b48c;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        #certificate img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        #about img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .certificate {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .certificate h3 {
+            color: #d2b48c;
+        }
+        .certificate img {
+            width: 100%;
+            height: auto;
+        }
+        .certificate p {
+            text-align: justify;
+        }
+        .about-section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h2 {
+            color: #d2b48c;
+        }
+        .about-section p {
+            text-align: justify;
+        }
+        .about-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .about-details div {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+        }
+        .about-details img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section h2 {
+            color: #d2b48c;
+        }
+        .skills-section p {
+            text-align: left;
+        }
+        .skills-section ul {
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+        .skills-section li {
+            background-color: #d2b48c;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            display: inline-block;
+            position: relative;
+            width: calc(50% - 20px); /* Adjust width to fit in row */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section li:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #d2b48c transparent transparent transparent;
+        }
+        .bubble {
+            background-color: #d2b48c;
+            color: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .bubble:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #d2b48c transparent transparent transparent;
+        }
     </style>
 </head>
 <body>
@@ -25,11 +187,11 @@
         <div class="about-details">
             <div>
                 <img src="https://github.com/aerianarc/aerianarc.github.io/raw/38e0410f32514314cf51e796b9afba613dffc146/6129610852375051375.jpg" alt="Profile Picture of Eriana Salwa">
-                <p class="about-bubble">Hello! My name is Eriana Salwa. I am a student at Taruna Bhakti Depok Vocational School, class twelve at TJKT one. I majored in Computer Network and Telecommunications Engineering. This portfolio is a reflection of my skills and experience in designing and managing networks and communications systems. With experience in UI UX Design, I am committed to delivering reliable and efficient solutions. Thank you for visiting my portfolio, and I look forward to working with you to address existing technology challenges.</p>
+                <p class="bubble">Hello! My name is Eriana Salwa. I am a student at Taruna Bhakti Depok Vocational School, class twelve at TJKT one. I majored in Computer Network and Telecommunications Engineering. This portfolio is a reflection of my skills and experience in designing and managing networks and communications systems. With experience in UI UX Design, I am committed to delivering reliable and efficient solutions. Thank you for visiting my portfolio, and I look forward to working with you to address existing technology challenges.</p>
             </div>
             <div>
                 <h3>My Interests</h3>
-                <p class="interests-bubble">I studied Computer Network and Telecommunications Engineering at Taruna Bhakti Vocational School, Depok. I have a deep interest in the fields of computer networks and telecommunications, and enjoy learning new things related to information technology. I continue to hone my skills in network management, and server configuration.</p>
+                <p class="bubble">I studied Computer Network and Telecommunications Engineering at Taruna Bhakti Vocational School, Depok. I have a deep interest in the fields of computer networks and telecommunications, and enjoy learning new things related to information technology. I continue to hone my skills in network management, and server configuration.</p>
             </div>
             <div>
                 <h3>Skills</h3>
@@ -71,6 +233,4 @@
 
     <footer>
         <p>Eriana Salwa &copy; 2024 My Portfolio</p>
-    </footer>
-</body>
-</html>
+    </
