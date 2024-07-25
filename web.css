@@ -1,3 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+footer {
+    background-color: #d2b48c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.about-details div {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff; /* Menambahkan background putih untuk kontras */
+    padding: 15px; /* Menambahkan padding di dalam kotak */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada kotak */
+    border-radius: 8px; /* Menambahkan sudut yang membulat */
+}
+.skills-section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+    color: #d2b48c;
+}
+
+.skills-section p {
+    text-align: left; /* Agar teks di bagian Skills rata kiri */
+}
+
+.skills-section ul {
+    list-style-type: disc; /* Menambahkan bullet point */
+    padding-left: 20px; /* Memberikan jarak pada bullet point */
+    text-align: left; /* Agar daftar berada di rata kiri */
+}
+
+.about-bubble, .interests-bubble {
+    background-color: #fff; /* Remove background color if you want it to be plain text */
+    color: #000; /* Set text color */
+    padding: 15px; /* Adjust padding as needed */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove margin if not needed */
+}
+
+.about-section p, .about-section h3 {
+    text-align: left; /* Ensure text is aligned left */
+}
+
+.skills-section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.skills-section li {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    width: calc(50% - 20px); /* Adjust width to fit in row */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section li:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #d2b48c transparent transparent transparent;
+}
 .bubble {
     background-color: #d2b48c;
     color: #fff;
