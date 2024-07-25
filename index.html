@@ -89,6 +89,9 @@
         .about-section h2 {
             color: #d2b48c;
         }
+        .about-section p {
+            text-align: justify;
+        }
         .about-details {
             display: flex;
             flex-wrap: wrap;
@@ -98,6 +101,7 @@
             flex: 1;
             min-width: 250px;
             margin: 10px;
+            text-align: center;
             background-color: #fff;
             padding: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -111,25 +115,6 @@
             display: block;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .bubble {
-            background-color: #d2b48c;
-            color: #fff;
-            padding: 15px;
-            border-radius: 15px;
-            position: relative;
-            display: inline-block;
-            margin-top: 20px;
-            text-align: left; /* Menambahkan rata kiri pada elemen bubble */
-        }
-        .bubble:after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 20px;
-            border-width: 10px;
-            border-style: solid;
-            border-color: #d2b48c transparent transparent transparent;
-        }
         .skills-section {
             background-color: #fff;
             padding: 20px;
@@ -138,12 +123,32 @@
         .skills-section h2 {
             color: #d2b48c;
         }
-        .skills-section p, .skills-section ul {
-            text-align: left; /* Agar teks di bagian Skills rata kiri */
+        .skills-section p {
+            text-align: left;
         }
         .skills-section ul {
-            list-style-type: disc; /* Menambahkan bullet point */
-            padding-left: 20px; /* Memberikan jarak pada bullet point */
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+        .skills-section li {
+            background-color: #d2b48c;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            display: inline-block;
+            position: relative;
+            width: calc(50% - 20px); /* Adjust width to fit in row */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section li:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #d2b48c transparent transparent transparent;
         }
     </style>
 </head>
@@ -173,7 +178,6 @@
             <div>
                 <h3>Skills</h3>
                 <div class="skills-section">
-                    <p class="bubble">I have deep skills:</p>
                     <ul>
                         <li>Network management</li>
                         <li>Server configuration</li>
@@ -214,5 +218,6 @@
     </footer>
 </body>
 </html>
+
 
 
