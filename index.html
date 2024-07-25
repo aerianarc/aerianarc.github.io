@@ -109,6 +109,17 @@
             margin: 0 auto;
             display: block;
         }
+        .skills-section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section h2 {
+            color: #d2b48c;
+        }
+        .skills-section p {
+            text-align: left; /* Agar teks di bagian Skills rata kiri */
+        }
     </style>
 </head>
 <body>
@@ -136,18 +147,20 @@
             </div>
             <div>
                 <h3>Skills</h3>
-                <p>Saya memiliki keterampilan dalam:
-                    <ul>
-                        <li>Manajemen jaringan</li>
-                        <li>Konfigurasi server</li>
-                        <li>Solusi hosting</li>
-                        <li>Penyelesaian masalah teknis</li>
-                        <li>Pengoptimalan performa</li>
-                        <li>Keamanan jaringan</li>
-                        <li>Virtualisasi dan cloud computing</li>
-                        <li>Pemrograman dasar (Python, HTML, CSS)</li>
-                    </ul>
-                </p>
+                <div class="skills-section">
+                    <p>Saya memiliki keterampilan dalam:
+                        <ul>
+                            <li>Manajemen jaringan</li>
+                            <li>Konfigurasi server</li>
+                            <li>Solusi hosting</li>
+                            <li>Penyelesaian masalah teknis</li>
+                            <li>Pengoptimalan performa</li>
+                            <li>Keamanan jaringan</li>
+                            <li>Virtualisasi dan cloud computing</li>
+                            <li>Pemrograman dasar (Python, HTML, CSS)</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -179,3 +192,4 @@
     </footer>
 </body>
 </html>
+
