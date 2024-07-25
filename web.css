@@ -29,3 +29,23 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada kotak */
     border-radius: 8px; /* Menambahkan sudut yang membulat */
 }
+.skills-section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+    color: #d2b48c;
+}
+
+.skills-section p {
+    text-align: left; /* Agar teks di bagian Skills rata kiri */
+}
+
+.skills-section ul {
+    list-style-type: disc; /* Menambahkan bullet point */
+    padding-left: 20px; /* Memberikan jarak pada bullet point */
+    text-align: left; /* Agar daftar berada di rata kiri */
+}
+
