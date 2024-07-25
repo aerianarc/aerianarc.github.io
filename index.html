@@ -98,11 +98,11 @@
             flex: 1;
             min-width: 250px;
             margin: 10px;
-            text-align: center;
-            background-color: #fff; /* Menambahkan background putih untuk kontras */
-            padding: 15px; /* Menambahkan padding di dalam kotak */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada kotak */
-            border-radius: 8px; /* Menambahkan sudut yang membulat */
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
         }
         .about-details img {
             border-radius: 50%;
@@ -110,22 +110,6 @@
             margin: 0 auto;
             display: block;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .skills-section {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .skills-section h2 {
-            color: #d2b48c;
-        }
-        .skills-section p {
-            text-align: left; /* Agar teks di bagian Skills rata kiri */
-        }
-        .skills-section ul {
-            list-style-type: disc; /* Menambahkan bullet point */
-            padding-left: 20px; /* Memberikan jarak pada bullet point */
-            text-align: left; /* Agar daftar berada di rata kiri */
         }
         .bubble {
             background-color: #d2b48c;
@@ -145,6 +129,21 @@
             border-width: 10px;
             border-style: solid;
             border-color: #d2b48c transparent transparent transparent;
+        }
+        .skills-section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section h2 {
+            color: #d2b48c;
+        }
+        .skills-section p, .skills-section ul {
+            text-align: left; /* Agar teks di bagian Skills rata kiri */
+        }
+        .skills-section ul {
+            list-style-type: disc; /* Menambahkan bullet point */
+            padding-left: 20px; /* Memberikan jarak pada bullet point */
         }
     </style>
 </head>
@@ -174,17 +173,15 @@
             <div>
                 <h3>Skills</h3>
                 <div class="skills-section">
-                    <div class="bubble">
-                        <p>I have deep skills:</p>
-                        <ul>
-                            <li>Network management</li>
-                            <li>Server configuration</li>
-                            <li>Hosting solutions</li>
-                            <li>Network security</li>
-                            <li>Virtualization and cloud computing</li>
-                            <li>Basic programming (Python, HTML, CSS)</li>
-                        </ul>
-                    </div>
+                    <p class="bubble">I have deep skills:</p>
+                    <ul>
+                        <li>Network management</li>
+                        <li>Server configuration</li>
+                        <li>Hosting solutions</li>
+                        <li>Network security</li>
+                        <li>Virtualization and cloud computing</li>
+                        <li>Basic programming (Python, HTML, CSS)</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -217,4 +214,5 @@
     </footer>
 </body>
 </html>
+
 
