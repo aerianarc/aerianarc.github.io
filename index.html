@@ -106,13 +106,14 @@
             padding: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            position: relative;
         }
         .about-details img {
             border-radius: 50%;
             max-width: 150px;
             margin: 0 auto;
             display: block;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada gambar */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .skills-section {
             background-color: #fff;
@@ -128,6 +129,24 @@
         .skills-section ul {
             list-style-type: disc;
             padding-left: 20px;
+        }
+        .bubble {
+            background-color: #d2b48c;
+            color: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .bubble:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #d2b48c transparent transparent transparent;
         }
     </style>
 </head>
@@ -148,11 +167,11 @@
         <div class="about-details">
             <div>
                 <img src="https://github.com/aerianarc/aerianarc.github.io/raw/38e0410f32514314cf51e796b9afba613dffc146/6129610852375051375.jpg" alt="Profile Picture of Eriana Salwa">
-                <p>Hello! My name is Eriana Salwa. I am a student at Taruna Bhakti Depok Vocational School, class twelve at TJKT one. I majored in Computer Network and Telecommunications Engineering. This portfolio is a reflection of my skills and experience in designing and managing networks and communications systems. With experience in UI UX Design, I am committed to delivering reliable and efficient solutions. Thank you for visiting my portfolio, and I look forward to working with you to address existing technology challenges.</p>
+                <p class="bubble">Hello! My name is Eriana Salwa. I am a student at Taruna Bhakti Depok Vocational School, class twelve at TJKT one. I majored in Computer Network and Telecommunications Engineering. This portfolio is a reflection of my skills and experience in designing and managing networks and communications systems. With experience in UI UX Design, I am committed to delivering reliable and efficient solutions. Thank you for visiting my portfolio, and I look forward to working with you to address existing technology challenges.</p>
             </div>
             <div>
                 <h3>My Interests</h3>
-                <p>I studied Computer Network and Telecommunications Engineering at Taruna Bhakti Vocational School, Depok. I have a deep interest in the fields of computer networks and telecommunications, and enjoy learning new things related to information technology. I continue to hone my skills in network management, and server configuration.</p>
+                <p class="bubble">I studied Computer Network and Telecommunications Engineering at Taruna Bhakti Vocational School, Depok. I have a deep interest in the fields of computer networks and telecommunications, and enjoy learning new things related to information technology. I continue to hone my skills in network management, and server configuration.</p>
             </div>
             <div>
                 <h3>Skills</h3>
@@ -199,5 +218,3 @@
     </footer>
 </body>
 </html>
-
-
