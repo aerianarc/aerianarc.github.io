@@ -42,8 +42,8 @@
             width: 100%;
         }
         .portfolio img, .contact-info img {
-            max-width: 100%; /* Menyesuaikan gambar dengan lebar kontainer */
-            height: auto; /* Menjaga proporsi gambar */
+            max-width: 100%;
+            height: auto;
         }
         .contact-info a {
             color: #d2b48c;
@@ -53,16 +53,16 @@
             text-decoration: underline;
         }
         #certificate img {
-            max-width: 80%; /* Atur lebar maksimal gambar dalam section certificate */
+            max-width: 80%;
             height: auto;
-            display: block; /* Agar margin auto berfungsi dengan baik */
-            margin: 0 auto; /* Menyelaraskan gambar di tengah kontainer */
+            display: block;
+            margin: 0 auto;
         }
         #about img {
-            max-width: 50%; /* Atur lebar maksimal gambar dalam section about */
+            max-width: 50%;
             height: auto;
-            display: block; /* Agar margin auto berfungsi dengan baik */
-            margin: 0 auto; /* Menyelaraskan gambar di tengah kontainer */
+            display: block;
+            margin: 0 auto;
         }
         .certificate {
             background-color: #fff;
@@ -81,6 +81,34 @@
         .certificate p {
             text-align: justify;
         }
+        .about-section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h2 {
+            color: #d2b48c;
+        }
+        .about-section p {
+            text-align: justify;
+        }
+        .about-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .about-details div {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            text-align: center;
+        }
+        .about-details img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -95,10 +123,22 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About</h2>
-        <img src="https://github.com/aerianarc/aerianarc.github.io/raw/38e0410f32514314cf51e796b9afba613dffc146/6129610852375051375.jpg" alt="Profile Picture of Eriana Salwa">
-        <p>Hello! Nama saya Eriana Salwa. Saya siswi SMK Taruna Bhakti Depok, kelas 12 TJKT 1</p>
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-details">
+            <div>
+                <img src="https://github.com/aerianarc/aerianarc.github.io/raw/38e0410f32514314cf51e796b9afba613dffc146/6129610852375051375.jpg" alt="Profile Picture of Eriana Salwa">
+                <p>Hello! Nama saya Eriana Salwa. Saya siswi SMK Taruna Bhakti Depok, kelas 12 TJKT 1.</p>
+            </div>
+            <div>
+                <h3>My Interests</h3>
+                <p>Saya mempelajari jurusan Teknik Jaringan Komputer dan Telekomunikasi di SMK Taruna Bhakti Depok. Saya memiliki ketertarikan yang mendalam dalam bidang jaringan komputer dan telekomunikasi, serta menikmati belajar hal-hal baru yang berhubungan dengan teknologi informasi. Saya terus mengasah keterampilan saya dalam manajemen jaringan, konfigurasi server, dan solusi hosting.</p>
+            </div>
+            <div>
+                <h3>Skills</h3>
+                <p>Saya memiliki keterampilan dalam manajemen jaringan, konfigurasi server, dan solusi hosting. Saya juga mahir dalam penyelesaian masalah teknis dan pengoptimalan performa.</p>
+            </div>
+        </div>
     </section>
 
     <section id="certificate">
