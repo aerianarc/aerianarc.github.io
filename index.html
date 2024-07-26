@@ -16,6 +16,7 @@
             color: #fff;
             padding: 10px 0;
             text-align: center;
+            animation: fadeIn 2s ease-in-out;
         }
         nav ul {
             list-style: none;
@@ -70,6 +71,7 @@
             margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            animation: slideIn 1s ease-in-out;
         }
         .certificate h3 {
             color: #d2b48c;
@@ -85,6 +87,7 @@
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
         }
         .about-section h2 {
             color: #d2b48c;
@@ -107,6 +110,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             position: relative;
+            animation: slideIn 1s ease-in-out;
         }
         .about-details img {
             border-radius: 50%;
@@ -158,6 +162,7 @@
             position: relative;
             display: inline-block;
             margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
         }
         .bubble:after {
             content: '';
@@ -167,6 +172,32 @@
             border-width: 10px;
             border-style: solid;
             border-color: #d2b48c transparent transparent transparent;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
